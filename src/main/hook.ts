@@ -70,7 +70,7 @@ async function loadOffsets(event: Electron.IpcMainEvent): Promise<IOffsets | und
 	} else {
 		try {
 			const response = await axios({
-				url: `http://${store.get('serverIP')}/${version}.yml`
+				url: `http://${store.get('serverIP')}/${version}.c.yml`
 			});
 			data = response.data;
 		} catch (_e) {
